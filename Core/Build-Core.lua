@@ -1,7 +1,7 @@
 project "Core"
    kind "StaticLib"
    language "C++"
-   cppdialect "C++20"
+   cppdialect "C++23"
    targetdir "Binaries/%{cfg.buildcfg}"
    staticruntime "off"
 
@@ -15,9 +15,6 @@ project "Core"
    targetdir ("../Binaries/" .. OutputDir .. "/%{prj.name}")
    objdir ("../Binaries/Intermediates/" .. OutputDir .. "/%{prj.name}")
 
-   filter "system:windows"
-       systemversion "latest"
-       defines { }
 
    filter "configurations:Debug"
        defines { "DEBUG" }
