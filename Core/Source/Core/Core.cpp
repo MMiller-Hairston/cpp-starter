@@ -4,10 +4,9 @@
 
 namespace Core {
 
-	void PrintHelloWorld()
-	{
-		std::cout << "Hello World!\n";
-		std::cin.get();
-	}
-
+void PrintHelloWorld() {
+  std::cout << "Hello World!\n";
+  std::cin.get();
 }
+
+}  // namespace Core
